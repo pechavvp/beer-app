@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import ava from '../../img/ava.png';
 import './UserInfo.css';
 import { ResponseUserContext } from '../../context/context';
@@ -6,7 +6,8 @@ import { ResponseUserContext } from '../../context/context';
 function UserInfo() {
     const [responseUserInfo, setResponseUserInfo] = useContext(ResponseUserContext);
 
-    let userPhoto = ava;
+    const [userPhoto, setUserPhoto] = useState(ava);
+
     let userFirstName = "";
     let userLastName = "";
     let userAge = "";
@@ -23,7 +24,9 @@ function UserInfo() {
         async function loadAvavtar() {
             let response = await fetch(responseUserInfo.avatar)
             .then(function(response) {
-            console.log(response);
+            if (response.status === 200) {
+                setUserPhoto(response.url);
+            }
             })
             .catch(err => console.log(err.message));
                 }
@@ -43,7 +46,7 @@ function UserInfo() {
   return (
     <div className="user-info">
         <div className="user-info__image-block">
-          <img className="user-info__image-block-photo" src={userPhoto}></img>
+          <img className="user-info__image-block-photo" src={userPhoto} alt="user_avatar"></img>
         </div>
         <div className="user-info__text-block">
           <p className="user-info__text-block-name">{userFirstName + " " + userLastName}</p>

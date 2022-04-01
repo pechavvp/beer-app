@@ -4,7 +4,6 @@ import { ResponseBeerContext } from '../../context/context';
 
 function BeerBlock() {
     const [responseBeerInfo, setResponseBeerInfo] = useContext(ResponseBeerContext);
-
     let beerBrand = "";
     let beerName = "";
     let beerAlco = "";
