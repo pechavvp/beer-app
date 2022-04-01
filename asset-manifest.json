@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/beer-app/static/css/main.a010ba82.css",
+    "main.js": "/beer-app/static/js/main.e9ad585f.js",
+    "static/media/ava.png": "/beer-app/static/media/ava.6ca1b977de77027c074a.png",
+    "index.html": "/beer-app/index.html",
+    "main.a010ba82.css.map": "/beer-app/static/css/main.a010ba82.css.map",
+    "main.e9ad585f.js.map": "/beer-app/static/js/main.e9ad585f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a010ba82.css",
+    "static/js/main.e9ad585f.js"
+  ]
+}
