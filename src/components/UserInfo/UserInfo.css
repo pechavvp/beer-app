@@ -1,0 +1,31 @@
+.user-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.user-info__image-block-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.user-info__text-block {
+    width: 400px;
+}
+
+.user-info__text-block-name, .user-info__text-block-age, .user-info__text-block-work {
+    margin: 0;
+}
+
+.user-info__text-block-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.user-info__text-block-age, .user-info__text-block-work {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,10 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-block {
+    width: 700px;
+    height: 400px;
+    margin: 20px auto 0;
+    border: 1px solid black;
+}
